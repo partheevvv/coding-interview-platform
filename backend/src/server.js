@@ -14,7 +14,7 @@ app.use(express.json());
 //credentials??: server allows a browser to include cookies on purpose
 app.use(cors({origin: ENV.CLIENT_URL, credentials:true}));
 
-app.unsubscribe("/api/inngest", serve({ client: inngest, functions }));
+app.use("/api/inngest", serve({ client: inngest, functions }));
 
 
 app.get("/books", (req, res)=> {
