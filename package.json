@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/partheevvv/coding-interview-platform/issues"
   },
-  "homepage": "https://github.com/partheevvv/coding-interview-platform#readme"
+  "homepage": "https://github.com/partheevvv/coding-interview-platform#readme",
+  "dependencies": {
+    "@clerk/express": "^1.7.41"
+  }
 }
