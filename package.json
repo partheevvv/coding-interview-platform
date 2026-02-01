@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/partheevvv/coding-interview-platform#readme",
   "dependencies": {
-    "@clerk/express": "^1.7.41"
+    "@clerk/express": "^1.7.41",
+    "@stream-io/node-sdk": "^0.7.12"
   }
 }
