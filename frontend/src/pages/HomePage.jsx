@@ -1,11 +1,11 @@
 import {Link} from "react-router";
-import {ArrowRightIcon, Binary, CheckIcon, VideoIcon, ZapIcon} from "lucide-react";
+import {ArrowRightIcon, Binary, CheckIcon, Code2Icon, UsersIcon, VideoIcon, ZapIcon} from "lucide-react";
 import { SignInButton } from "@clerk/clerk-react";
 
 
 function HomePage() {
   return (
-    <div className="bg-linear-to-br from-base-100 via-base-200 to-base-300">
+    <div className="antialiased bg-linear-to-br from-base-100 via-base-200 to-base-300 tracking-ti">
       {/*NAVBAR*/}
       <nav className="bg-base-100/80 backdrop-blur-md border-b border-b-drac-comment sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto p-4 flex items-center justify-between">
@@ -54,7 +54,7 @@ function HomePage() {
               <span className="font-mono tracking-tight">Real-Time Collaboration</span>
             </div>
 
-            <h1 className="font-mono text-5xl lg:text-6xl font-black leading-tight">
+            <h1 className="font-mono font-black text-5xl lg:text-6xl leading-tight">
               <span className="bg-linear-to-r from-drac-yellow via-drac-sec-yellow to-accent bg-clip-text text-transparent">
                 Code Together
               </span>
@@ -103,7 +103,7 @@ function HomePage() {
                 <div className="stat-title">Active Users</div>
               </div>
               <div className="stat">
-                <div className="stat-value text-drac-sec-yellow">50K+</div>
+                <div className="stat-value text-drac-yellow">50K+</div>
                 <div className="stat-title">Sessions</div>
               </div>
               <div className="stat">
@@ -121,6 +121,55 @@ function HomePage() {
           />
         </div>
       </div>
+      
+      <section className="max-w-7xl mx-auto px-6 py-9">
+        {/* FEATURES SECTION */}
+        <div className ="font-mono max-w-7xl mx-auto px-6 py-20">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">
+              Everything You Need to <span className="text-drac-yellow ">Succeed</span>
+            </h2>
+            <p className="text-lg text-base-content/70 max-w-2xl mx-auto ">
+              Powerful features deigned to make your coding interviews seamless and productive
+            </p>
+          </div>
+        </div>
+
+
+        {/* FEATURES GRID */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* {Feature1} */}
+          <div className="card bg-base-100 shadow-xl">
+            <div className="font-mono card-body items-center text-center">
+              <div className="size-16 bg-drac-yellow/10 rounded-2xl flex items-center justify-center mb-4">
+                <VideoIcon className="size-8 text-drac-yellow" />
+              </div>
+              <h3 className="card-title">HD Video Calls</h3>
+              <p className="text-base-content/70">Crystal clear audio for seamless communication during interviews</p>
+            </div>
+          </div>
+          {/* {Feature 2} */}
+          <div className="card bg-base-100 shadow-xl">
+            <div className="font-mono card-body items-center text-center">
+              <div className="size-16 bg-drac-yellow/10 rounded-2xl flex items-center justify-center mb-4">
+                <Code2Icon className="size-8 text-drac-yellow" />
+              </div>
+              <h3 className="card-title">Live Code Editor</h3>
+              <p className="text-base-content/70">Collaborate in real-time with syntax highlighting and multiple language support</p>
+            </div>
+          </div>
+          {/* {Feature1} */}
+          <div className="card bg-base-100 shadow-xl">
+            <div className="font-mono card-body items-center text-center">
+              <div className="size-16 bg-drac-yellow/10 rounded-2xl flex items-center justify-center mb-4">
+                <UsersIcon className="size-8 text-drac-yellow" />
+              </div>
+              <h3 className="card-title">Easy Collaboration</h3>
+              <p className="text-base-content/70">Share your screen, discuss solutions, and learn from each other in real-time</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     )
 }
