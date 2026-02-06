@@ -1,2 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=JetBrains+Mono:wght@400;500&family=Geist:wght@400;600&display=swap');
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+themes: all;
+}
+
+@layer base {
+  /* This makes the white text in Dracula look crisp like your image */
+  .text-base-content {
+    color: #f8f8f2;
+  }
+
+  button:not(disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@theme {
+  --font-brand: "Outfit", sans-serif;
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-drac-purple: #bd93f9;
+  --color-drac-sec-yellow: #ff9f33; /* Top Right A */
+ /* Top Right A */
+  --color-drac-yellow: #ffb86c; /* Bottom Left A */
+  --color-drac-pink: #ff79c6;   /* Top Left A */
+  --color-drac-comment: #6272a4;
+  --color-drac-black: #282a36;
+}
+
